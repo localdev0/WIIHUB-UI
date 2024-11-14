@@ -1640,6 +1640,12 @@ Library:SetFooter("Welcome, "..(plr.DisplayName or plr.Name))
 ```lua
 local tab1 = Library:NewTab("Catching")
 ```
+## Create Button
+```lua
+sec1:NewButton("test", function()
+	print("test")
+end)
+```
 ## Create Section
 ```lua
 local sec1 = tab1:NewSection("Catching")
