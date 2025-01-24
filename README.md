@@ -578,8 +578,9 @@ function lib:CreateWindow(title)
 
 		local function onToggle()
 			toggleState = not toggleState
-			local checkboxTween = TweenService:Create(Checkbox_2, TweenInfo.new(0.7), {BackgroundTransparency = toggleState and 0 or 1})
-			local checkmarkTween = TweenService:Create(Checkmark_2, TweenInfo.new(0.7), {ImageTransparency = toggleState and 0 or 1})
+			local checkboxTween = TweenService:Create(Checkbox_2, TweenInfo.new(0.3), {BackgroundTransparency = toggleState and 0 or 1})
+			local checkmarkTween = TweenService:Create(Checkmark_2, TweenInfo.new(0.3), {ImageTransparency = toggleState and 0 or 1})
+			wait(0.4)
 			local titleTween = TweenService:Create(Title_6, TweenInfo.new(0.7), {TextTransparency = toggleState and 0 or 0.6})
 			local stroke5Tween = TweenService:Create(UIStroke_5, TweenInfo.new(0.7), {Transparency = toggleState and 0 or 1})
 			local stroke6Tween = TweenService:Create(UIStroke_6, TweenInfo.new(0.7), {Transparency = toggleState and 1 or 0})
