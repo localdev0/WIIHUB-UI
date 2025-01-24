@@ -584,10 +584,10 @@ function lib:CreateWindow(title)
 			local stroke5Tween = TweenService:Create(UIStroke_5, TweenInfo.new(0.7), {Transparency = toggleState and 0 or 1})
 			local stroke6Tween = TweenService:Create(UIStroke_6, TweenInfo.new(0.7), {Transparency = toggleState and 1 or 0})
 
+			titleTween:Play()
 			checkboxTween:Play()
 			checkmarkTween:Play()
 			wait(0.4)
-			titleTween:Play()
 			stroke5Tween:Play()
 			stroke6Tween:Play()
 
