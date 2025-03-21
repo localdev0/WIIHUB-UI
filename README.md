@@ -29,7 +29,7 @@ function lib:CreateWindow(title)
 	local Line_2 = Instance.new("Frame")
 	
 	wii.Name = "wii"
-	wii.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	wii.Parent = game:GetService("CoreGui")
 	wii.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	wii.ResetOnSpawn = false
 
